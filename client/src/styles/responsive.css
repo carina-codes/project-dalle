@@ -1,0 +1,88 @@
+/* iPad Pro */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.mobile-menu {
+		display: none;
+	}
+	.desktop-menu {
+		display: block;
+	}
+}
+
+/* iPad */
+@media (min-width: 760px) and (max-width: 991px) {
+	.mobile-menu {
+		display: block;
+	}
+	.desktop-menu {
+		display: none;
+	}
+}
+
+/* Mobile Landscape */
+@media (min-width: 560px) and (max-width: 759px) {
+	.col-reverse {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.mobile-only {
+		display:block !important;
+	}
+	.desktop-only {
+		display:none !important;
+	}
+	.desktop-menu {
+		display: none;
+	}
+	.mobile-menu {
+		display: block;
+	}
+}
+
+@media screen and (min-width:992px) {
+	.mobile-only {
+		display:none !important;
+	}
+	.desktop-only {
+		display:block !important;
+	}
+}
+
+/* Mobile */
+@media only screen and (max-width: 559px) {
+	.col-reverse {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.mobile-only {
+		display:block !important;
+	}
+	.desktop-only {
+		display:none !important;
+	}
+	.desktop-menu {
+		display: none;
+	}
+	.mobile-menu {
+		display: block;
+	}
+}
+
+/* iPhone */
+@media only screen and (max-width: 375px) {
+
+}
+
+/* Galaxy S5 */
+@media only screen and (max-width: 360px) {
+
+}
+
+/* iPhone 5 */
+@media only screen and (max-width: 320px) {
+
+}
+
+/* Galaxy Fold */
+@media only screen and (max-width: 280px) {
+
+}
