@@ -94,57 +94,64 @@ const CreatePost = () => {
             </div>
 
             <form className="form-style" onSubmit={handleSubmit}>
-              <FormField 
-                labelName="Your name"
-                type="text"
-                name="name"
-                placeholder="John Doe" 
-                value={form.name}
-                handleChange={handleChange}
-              />
-              <FormField 
-                labelName="Prompt"
-                type="text"
-                name="prompt"
-                placeholder="A plush toy robot sitting against a yellow wall" 
-                value={form.prompt}
-                handleChange={handleChange} 
-                isSurpriseMe 
-                handleSurpriseMe={handleSurpriseMe}
-              />
-
-              <div className="ai-image">
-                {form.photo ? (
-                  <img 
-                    src={form.photo}
-                    alt={form.prompt}
-                    className="generated-img"
-                  />
-                ) : (
-                  <img 
-                    src={preview}
-                    alt="preview"
-                    className="generated-img-preview"
-                  />
-                )}
-
-                {generatingImg && (
-                  <div className="loading-img jalign">
-                    <Loader />
+              <div className="row">
+                <div className="col-md-5">
+                  <div className="create-fields">
+                    <FormField 
+                      labelName="Your name"
+                      type="text"
+                      name="name"
+                      placeholder="John Doe" 
+                      value={form.name}
+                      handleChange={handleChange}
+                    />
+                    <FormField 
+                      labelName="Prompt"
+                      type="text"
+                      name="prompt"
+                      placeholder="A plush toy robot sitting against a yellow wall" 
+                      value={form.prompt}
+                      handleChange={handleChange} 
+                      isSurpriseMe 
+                      handleSurpriseMe={handleSurpriseMe}
+                    />
                   </div>
-                )}
-              </div>
+                </div>
+                <div className="col-md-7">
+                  <div className="ai-image">
+                    {form.photo ? (
+                      <img 
+                        src={form.photo}
+                        alt={form.prompt}
+                        className="generated-img"
+                      />
+                    ) : (
+                      <img 
+                        src={preview}
+                        alt="preview"
+                        className="generated-img-preview"
+                      />
+                    )}
 
-              <div className="align-center">
-                <button
-                  type="button"
-                  onClick={generateImage}
-                  className="btn-generate"
-                >
-                  {generatingImg ? 'Generating...' : 'Generate'}
-                </button>
-              </div>
+                    {generatingImg && (
+                      <div className="loading-img jalign">
+                        <Loader />
+                      </div>
+                    )}
+                  </div>
 
+                  <div className="align-center">
+                    <button
+                      type="button"
+                      onClick={generateImage}
+                      className="btn-generate"
+                    >
+                      {generatingImg ? 'Generating...' : 'Generate'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
               <div className="share-generated-image">
                 <p>
                   Once you have created the image you want, you can share it with others in the community.

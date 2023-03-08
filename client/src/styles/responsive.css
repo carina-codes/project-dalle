@@ -89,6 +89,9 @@
     height: 25px;
     width: 25px;
 	}
+	.form-style .create-fields {
+		padding-right: 0px;
+	}
 }
 
 /* iPhone */
