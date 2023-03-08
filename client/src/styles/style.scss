@@ -197,6 +197,10 @@ section {
   }
 }
 
+input {
+  font-size: 15px;
+}
+
 .search-results {
   .grid {
     h2 {
@@ -220,12 +224,15 @@ section {
 }
 
 .form-style {
-  width: 800px;
   max-width: 100%;
   margin: auto;
-  padding: 25px 0px;
+  padding: 50px 0px;
+  .create-fields {
+    padding-right: 25px;
+  }
   label {
     margin-right: 10px;
+    font-weight: 800;
   }
   input {
     background: $color-white;
@@ -233,7 +240,7 @@ section {
     border-radius: 5px;
     padding: 8px 12px;
     border: 1px solid gainsboro;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-top: 5px;
     width: 100%;
   }
@@ -293,15 +300,17 @@ section {
   text-align: center;
   position: relative;
   margin: 20px 0px;
+  margin-top: 0px;
   border: 0px solid gainsboro;
-  border-radius: 5px;
+  border-radius: 0px;
+  background: $color-white;
   img {
     width: 100%;
-    padding: 15px;
+    padding: 0px;
     padding-bottom: 0px;
   }
   .generated-img-preview {
-    opacity: .25;
+    opacity: .05;
     width: 100%;
     height: 100%;
     object-fit: cover;
