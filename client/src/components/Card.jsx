@@ -17,14 +17,14 @@ const Card = ({ _id, name, prompt, photo }) => {
             {prompt}
           </p>
           <div className="row">
-            <div className="col-6">
+            <div className="col-8 valign">
               <div>
                 <p className="card-name">
                   <span className="icon">{name[0]}</span> <span className="card-full-name">{name}</span>
                 </p>
               </div>
             </div>
-            <div className="col-6 align-right">
+            <div className="col-4 align-right">
               <button type="button" onClick={() => downloadImage(_id, photo)}>
                 <img src={download} alt="download" className="download-btn" />
               </button>

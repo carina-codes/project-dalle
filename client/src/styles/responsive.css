@@ -65,6 +65,30 @@
 	.mobile-menu {
 		display: block;
 	}
+	main {
+    padding: 0px;
+	}
+	.form {
+		padding: 25px 0 25px;
+	}
+	.grid {
+    display: grid;
+    grid-template-columns: auto;
+	}
+	.card-style .card-info .card-prompt {
+    font-size: 14px;
+	}
+	.card-style .card-info {
+    padding: 15px;
+	}
+	.card-style .card-info span.icon, .card-style .card-info span.card-full-name {
+    font-size: 14px;
+	}
+	.card-style .card-info span.icon {
+    padding: 6px 5px;
+    height: 25px;
+    width: 25px;
+	}
 }
 
 /* iPhone */
