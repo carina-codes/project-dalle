@@ -1,3 +1,5 @@
+*** Currently OFF to prevent OpenAI API costs
+
 *** GOAL:
 https://www.youtube.com/watch?v=EyIvuigqDoA
 
